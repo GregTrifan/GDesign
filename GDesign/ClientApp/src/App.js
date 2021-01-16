@@ -1,9 +1,9 @@
 import React from 'react';
 import {BrowserRouter as Router,Route, Switch} from "react-router-dom";
 import { Design } from './components/Design';
-import { Home } from './components/Home';
-import { FetchData } from './components/FetchData';
-import { Counter } from './components/Counter';
+import { Home } from './components/Home.jsx';
+import { FetchData } from './components/FetchData.jsx';
+import { Counter } from './components/Counter.jsx';
 
 import './App.less'
 
