@@ -14,7 +14,7 @@ export const  Navbar = () => {
       }}
     >
       <div className="logo">G Design</div>
-          <Menu theme="dark" mode="inline">
+          <Menu mode="inline">
           <Menu.Item key="0" icon={<HomeOutlined/>}>
           <Link to="/">Home</Link>
           </Menu.Item>
