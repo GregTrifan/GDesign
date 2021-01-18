@@ -40,10 +40,9 @@ export const FetchData = () => {
     .then((response) => response.json()) // Turn to array of objects
     .then(res => res.map((entry)=>{
       var beauty = new Date(entry.date);
-      return {date:beauty.toUTCString(),
-        temperatureC:entry.temperatureC,
-      temperatureF:entry.temperatureF,
-      summary:entry.summary
+      return {
+        ...entry,
+        date:beauty.toUTCString(),
     }
     }))
     .then(entry => {setForecasts(entry)}) // set the forecasts as the API Response
