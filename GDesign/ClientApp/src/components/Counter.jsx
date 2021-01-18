@@ -9,19 +9,9 @@ export const Counter = () => {
   const [modifier,setModifier] = useState(1); // 1 is by default
   const [num,setNum] = useState(0);
   let incrementCounter = () => setNum(num+modifier);
-  const [loading,setLoading] = useState(false);
   const [visible,setVisible] = useState(false);
-
   const showModal = () => {
     setVisible(true);
-  }
-  const handleOk=() => {
-    setLoading(true);
-    // Process editing values
-    setTimeout(() => {
-      setLoading(false);
-      setVisible(false);
-    }, 1000);
   }
   const handleCancel = () => {
       setVisible(false);
@@ -53,7 +43,6 @@ export const Counter = () => {
       theme="dark"
       style={{ top: 300 }}
       title="Modify value"
-      onOk={handleOk}
       onCancel={handleCancel}
       footer={[]} //Empty 
       >
