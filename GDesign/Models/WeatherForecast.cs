@@ -1,6 +1,6 @@
 using System;
-
-namespace GDesign
+using System.Collections.Generic;
+namespace GDesign.Models
 {
     public class WeatherForecast
     {
