@@ -1,7 +1,9 @@
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 namespace GDesign.Models
 {
+    [Keyless]
     public class WeatherForecast
     {
         public DateTime Date { get; set; }
